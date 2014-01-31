@@ -5,7 +5,7 @@ Sistema Wysiwyg para YII usando Redactor (Extensión)
 
 Reemplazaremos el campo en _form con este código donde queremos que aparezca el código:
 
- //elemento
+	//elemento
  <?php echo $form->labelEx($model,'contenido'); ?>
  <?php $this->widget(
      'ext.redactor.ERedactorWidget', array(
@@ -19,6 +19,7 @@ Reemplazaremos el campo en _form con este código donde queremos que aparezca el
      ));
  ?>
  <?php echo $form->error($model,'contenido'); ?>
+	
  
 Debemos cerciorarnos que en donde definimos la ruta Absoluta, esté nuestro controlador.
 
